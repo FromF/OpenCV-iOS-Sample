@@ -11,6 +11,7 @@
 		9DFD6E8329887F8E0002900C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD6E8229887F8E0002900C /* ContentView.swift */; };
 		9DFD6E8529887F950002900C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD6E8429887F950002900C /* Assets.xcassets */; };
 		9DFD6E8829887F950002900C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD6E8729887F950002900C /* Preview Assets.xcassets */; };
+		9DFD6E8F298880500002900C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD6E8E298880500002900C /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9DFD6E8229887F8E0002900C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DFD6E8429887F950002900C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DFD6E8729887F950002900C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DFD6E8E298880500002900C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFD6E8F298880500002900C /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +57,7 @@
 				9DFD6E8029887F8E0002900C /* OpenCVSampleApp.swift */,
 				9DFD6E8229887F8E0002900C /* ContentView.swift */,
 				9DFD6E8429887F950002900C /* Assets.xcassets */,
+				9DFD6E8E298880500002900C /* opencv2.framework */,
 				9DFD6E8629887F950002900C /* Preview Content */,
 			);
 			path = OpenCVSample;
@@ -268,6 +272,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenCVSample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCVSample",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -296,6 +305,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenCVSample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenCVSample",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
