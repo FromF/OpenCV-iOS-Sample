@@ -12,6 +12,7 @@
 
 @interface OpenCVBridge : NSObject
 + (nullable UIImage *)filteredImage;
++ (nullable UIImage *)captureOneShot;
 @end
 
 #endif /* OpenCVBridge_hpp */

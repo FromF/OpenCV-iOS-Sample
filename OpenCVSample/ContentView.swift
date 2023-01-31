@@ -20,6 +20,7 @@ struct ContentView: View {
             } else {
                 Text("No Image")
             }
+            
             Button {
                 isFiltered.toggle()
                 refreshImage(isFiltered: isFiltered)
@@ -30,7 +31,10 @@ struct ContentView: View {
                     Text("Filter Image")
                 }
             }
-
+            
+            Button("OneShot Capture") {
+                image = OpenCVBridge.captureOneShot()
+            }
         }
         .onAppear {
             refreshImage(isFiltered: false)

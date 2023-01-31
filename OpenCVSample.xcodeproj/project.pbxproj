@@ -13,6 +13,11 @@
 		9DFD6E8829887F950002900C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD6E8729887F950002900C /* Preview Assets.xcassets */; };
 		9DFD6E8F298880500002900C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD6E8E298880500002900C /* opencv2.framework */; };
 		9DFD6E9329888A820002900C /* OpenCVBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD6E9129888A820002900C /* OpenCVBridge.mm */; };
+		9DFD6E962988FBBA0002900C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD6E952988FBBA0002900C /* CoreMedia.framework */; };
+		9DFD6E982988FBC40002900C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD6E972988FBC30002900C /* AudioToolbox.framework */; };
+		9DFD6E9A2988FBCB0002900C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD6E992988FBCB0002900C /* CoreGraphics.framework */; };
+		9DFD6E9C2988FBD30002900C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD6E9B2988FBD30002900C /* CoreVideo.framework */; };
+		9DFD6E9E2988FBDB0002900C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD6E9D2988FBDB0002900C /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,12 @@
 		9DFD6E9029888A810002900C /* OpenCVSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		9DFD6E9129888A820002900C /* OpenCVBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVBridge.mm; sourceTree = "<group>"; };
 		9DFD6E9229888A820002900C /* OpenCVBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVBridge.h; sourceTree = "<group>"; };
+		9DFD6E952988FBBA0002900C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9DFD6E972988FBC30002900C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9DFD6E992988FBCB0002900C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9DFD6E9B2988FBD30002900C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9DFD6E9D2988FBDB0002900C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9DFD6E9F2988FBEF0002900C /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +43,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFD6E9A2988FBCB0002900C /* CoreGraphics.framework in Frameworks */,
+				9DFD6E962988FBBA0002900C /* CoreMedia.framework in Frameworks */,
+				9DFD6E9E2988FBDB0002900C /* AVFoundation.framework in Frameworks */,
 				9DFD6E8F298880500002900C /* opencv2.framework in Frameworks */,
+				9DFD6E982988FBC40002900C /* AudioToolbox.framework in Frameworks */,
+				9DFD6E9C2988FBD30002900C /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +60,7 @@
 			children = (
 				9DFD6E7F29887F8E0002900C /* OpenCVSample */,
 				9DFD6E7E29887F8E0002900C /* Products */,
+				9DFD6E942988FBBA0002900C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +93,19 @@
 				9DFD6E8729887F950002900C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DFD6E942988FBBA0002900C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DFD6E9F2988FBEF0002900C /* libiconv.tbd */,
+				9DFD6E9D2988FBDB0002900C /* AVFoundation.framework */,
+				9DFD6E9B2988FBD30002900C /* CoreVideo.framework */,
+				9DFD6E992988FBCB0002900C /* CoreGraphics.framework */,
+				9DFD6E972988FBC30002900C /* AudioToolbox.framework */,
+				9DFD6E952988FBBA0002900C /* CoreMedia.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
